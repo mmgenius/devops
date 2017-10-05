@@ -4,14 +4,11 @@
     ECc - DevOps - Labs
     Introduction to Maven, Git and Continuous Integration
 
-Importez le projet XXXX.
-
-
 ### Objectifs du TP
 
 - Comprendre le fonctionnement de maven.
 - Utiliser les artifacts
-- Configurer un projet eclipse avec maven.
+- Configurer un projet Eclipse avec maven.
 - Créer son propre MOJO
 - Générer des rapports maven
 - Utiliser Git pour sauvegarder le code source de votre projet
@@ -79,7 +76,7 @@ Par exemple si vous exécutez la commande
         -DgroupId=fr.ut2j.m1ice.ci \
         -DartifactId=tpmaven
 
-Vous obtiendrez l’architecture suivante.
+Vous obtiendrez l’architecture suivante :
  
     |-- src
     |   |-- main
@@ -104,7 +101,7 @@ Le fichier pom.xml est le fichier de configuration maven du projet. Il décrit l
 
 ### Configuration d'un projet Maven dans Eclipse
 
-Dépuis Eclipse 4.X, le support de maven s’est amélioré. Pour importer votre projet : 
+Depuis Eclipse 4.X, le support de maven s’est amélioré. Pour importer votre projet : 
 
     File -> import -> maven -> existing maven project.
 
@@ -112,7 +109,7 @@ Votre projet est configuré.
 
 ## Gestion des dépendances
 
-Intégrer à votre code source le fichier [ici](https://gist.github.com/combemale/d37efa02b1f3888aeb0034aac7732e3a).
+Intégrer à votre projet le fichier [ici](https://gist.github.com/combemale/d37efa02b1f3888aeb0034aac7732e3a).
 
 Vous verrez que le code ne compile pas car il manque une dépendances. Intégrez maintenant la dépendance à swingx. 
 
@@ -163,7 +160,7 @@ Ajoutez des commentaires à votre code, puis ajoutez le code suivant dans le pom
      </plugins>
     </reporting>
 
-Puis lancez en ligne de commande (au même niveau que le fichier pom.xml) : mvn site. Cette tâche crée un site Web pour votre projet. Par défaut, les goals maven générant des fichiers travaillent dans le dossier target se trouvant au même niveau que le fichier pom.xml. Allez dans le dossier target/site et ouvrez le fichier *index.html*. Vous pouvez regarder la Javadoc générée en cliquant sur Project reports.
+Puis lancez en ligne de commande (au même niveau que le fichier *pom.xml*) : mvn site. Cette tâche crée un site Web pour votre projet. Par défaut, les goals maven générant des fichiers travaillent dans le dossier target se trouvant au même niveau que le fichier *pom.xml*. Allez dans le dossier target/site et ouvrez le fichier *index.html*. Vous pouvez regarder la Javadoc générée en cliquant sur Project reports.
 
 Eclipse permet de lancer cette commande maven sans passer par la ligne de commande (voir menu run d'Eclipse). 
 
