@@ -35,7 +35,7 @@ public class AppTest extends TestCase
     
     public void testAppAge()
     {
-    	Personne mamad = new Personne("Mamadou", 19);
+    	Personne mamad = new Personne("Mamadou", 17);
         assertTrue(mamad.estMajeur());
     }
 }
